@@ -1,0 +1,29 @@
+body {
+    background-image: url("https://wallpapersite.com/images/wallpapers/team-india-3135x1332-national-cricket-team-indian-cricket-team-ms-8561.jpg");
+    background-size: 100% 100%;
+    margin: 0px;
+    background-attachment: fixed;
+}
+
+div {
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 500px;
+    background-attachment: fixed;
+}
+
+#div_1 {
+    background-image: url("https://www.sbs.com.au/yourlanguage/sites/sbs.com.au.yourlanguage/files/styles/full/public/indian_team_2.jpg?itok=Js19zBoi&mtime=1526607423");
+}
+#div_2 {
+    background-image: url("https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/02/17/652454-team-india-winning.jpg");
+}
+#div_3 {
+    background-image: url("https://images.indianexpress.com/2018/08/virat-kohli-m7.jpg");
+}
+#div_4 {
+    background-image: url("https://www.cricket.com.au/-/media/News/2018/09/01ViratAsiaCup.ashx");
+}
+#div_5 {
+    background-image: url("https://www.cricket.com.au/-/media/News/2018/02/9Kohli.ashx");
+}
