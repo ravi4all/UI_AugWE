@@ -1,0 +1,9 @@
+base size = 16px = 1em
+base size = 14px = 1em
+h1 - 32px - 2em
+
+Block Level - occupy full width that is available to element
+- div, h1...h6, p, table, form, ul, li...etc
+
+Inline Level - occupy width according to content...so there is no height and width of inline elements
+- a, span, b, i, u, strong, small...etc
