@@ -1,0 +1,13 @@
+/* Syntax of CSS
+body, h2 - Selector
+{}       - Expression
+color    - property
+red      - value 
+*/
+body {
+    background-color: lightsalmon;
+}
+
+h2 {
+    color: green;
+}

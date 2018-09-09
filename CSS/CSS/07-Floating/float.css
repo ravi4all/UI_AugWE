@@ -1,0 +1,34 @@
+/* After and Before */
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col {
+    width: 40%;
+}
+
+.col-1 {
+    float: left;
+    background-color: lightblue;
+}
+.col-2 {
+    background-color: lightcoral;
+    float: right;
+}
+
+#parent {
+    background-color: lightsalmon;
+    border: 2px solid red;
+    /* margin-bottom: 100px; */
+}
+
+.blank {
+    /* clear: both; */
+}
+
+.div_1 {
+    background-color: lightgreen;
+    /* clear: both; */
+}
