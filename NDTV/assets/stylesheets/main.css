@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    background-color: #EAEAEA;
     font-family: Lato, sans-serif;
 }
 
@@ -36,7 +37,8 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .sprite {
@@ -115,9 +117,156 @@ h6 {
     margin: 0px 10px;
 }
 
-#content {}
+.border_1 {
+    position: relative;
+    margin-bottom: 10px;
+}
 
-#main {}
+.border_1:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 50%;
+    bottom: 0px;
+    border: 1px solid #000;
+}
+
+#content {
+    margin-top: 40px;
+}
+
+#main a {
+    color: #000;
+}
+
+#main .sidebar_1 {
+    width: 26%;
+    padding-left: 1px;
+}
+
+#main .sidebar_1 img {
+    width: 100%;
+}
+
+#main .sidebar_1 .exclusive {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+#main .sidebar_1 h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px;
+}
+
+#main .sidebar_1 .desc {
+    padding: 10px;
+}
+
+#main .sidebar_1 h3 {
+    font-size: 16px;
+}
+
+#main .sidebar_1 .top_stories {
+    background-color: #fff;
+    padding: 15px;
+}
+
+#main .sidebar_1 .top_stories .image {
+    width: 35%;
+}
+
+#main .sidebar_1 ul li {
+    margin-bottom: 15px;
+}
+
+#main .sidebar_1 .top_stories .text {
+    width: 60%;
+    margin-left: 10px;
+}
+
+#main .top_stories .text h4 {
+    font-size: 14px;
+    padding: 10px 0px;
+}
+
+#main .top_stories .text h4 a {
+    color: #2b2b2b;
+}
+
+#main .main_news {
+    width: 45%;
+    margin: 0px 24px;
+}
+
+#main .main_news h1 {
+    font-size: 22px;
+    text-align: center;
+}
+
+#main .headline {
+    background-color: #fff;
+}
+
+#main .main_news .image {
+    position: relative;
+}
+
+#main .main_news img {
+    width: 100%;
+}
+
+#main .main_news .headline .desc {
+    padding: 10px;
+    position: absolute;
+    bottom: -10px;
+    background-color: #fff;
+}
+
+#main .section_2 {
+    margin-top: 50px;
+}
+
+#main .section_2 ul li {
+    display: inline-block;
+    width: 31%;
+    position: relative;
+}
+
+#main .section_2 .image {
+    position: relative;
+}
+
+#main .section_2 .desc {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+#main .section_2 ul li:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 70%;
+    background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 1) 100%);
+    width: 100%;
+    display: block;
+}
+
+#main .section_2 ul li:nth-child(2) {
+    margin: 0px 15px;
+}
+
+#main .section_2 a {
+    color: #fff;
+}
+
+#main .sidebar_2 {
+    width: 20%;
+}
 
 #sidebar {}
 
