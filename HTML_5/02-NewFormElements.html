@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>New Form Elements</h1>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td><label for="">Name</label></td>
+                <td>
+                    <input type="text" autocomplete="off" required value="ram" placeholder="Enter Name">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Email</label></td>
+                <td>
+                    <input type="email" readonly required placeholder="Enter Name" value="ram@gmail.com">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Age</td>
+                <td>
+                    <input type="number" min="18" max="50">
+                </td>
+            </tr>
+            <tr>
+                <td>Choose Color</td>
+                <td>
+                    <input type="color">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter URL</td>
+                <td>
+                    <input type="url" placeholder="Enter URL">
+                </td>
+            </tr>
+            <tr>
+                <td>Choose Range</td>
+                <td>
+                    <input type="range" step="20" value="500" max="1000" min="20" onchange="output.value = value">
+                </td>
+                <td>
+                    <output id="output"></output>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                    <input type="time">
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+            </tr>
+            <tr>
+                <td>Your Progress</td>
+                <td>
+                    <progress value="10" max="100"></progress>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Message</td>
+                <td>
+                    <textarea cols="30" rows="10" style="resize:none;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
