@@ -1,0 +1,57 @@
+#audio {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    transition: 0.5s;
+}
+
+li:hover {
+    background-color: #F6F6F6;
+}
+
+li:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+button {
+    background-color: lightseagreen;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    float: right;
+}
+
+img {
+    float: left;
+    width: 10%;
+    margin-right: 10px;
+}
+
+li span {
+    display: inline-block;
+    padding-top: 10px;
+    float: left;
+    /* width: 200px; */
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col {
+    width: 40%;
+}
+
+h2 {
+    text-align: center;
+}

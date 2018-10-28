@@ -18,16 +18,27 @@ function initEvents() {
         button.innerHTML = operations[i];
         button.className = "opr";
         operators.appendChild(button);
+        button.addEventListener("click", appendOpeartion);
     }
 
     var btn = document.createElement("button");
     btn.innerHTML = "=";
     btn.className = 'opr';
     operators.appendChild(btn);
+    btn.addEventListener("click", calc);
 
 }
 
 function insertValue() {
     var value = event.srcElement.innerHTML;
     document.getElementById("box").value += value;
+}
+
+function appendOpeartion() {
+    document.getElementById("box").value += event.srcElement.innerHTML;
+}
+
+function calc() {
+    var expression = document.getElementById("box").value;
+    document.getElementById("box").value = eval(expression);
 }
