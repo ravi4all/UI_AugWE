@@ -20,7 +20,8 @@ li:after {
     clear: both;
 }
 
-button {
+#songsList button,
+#playlist button {
     background-color: lightseagreen;
     padding: 10px;
     border: none;

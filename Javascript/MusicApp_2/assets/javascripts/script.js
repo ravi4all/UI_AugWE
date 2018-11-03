@@ -6,6 +6,8 @@ function initEvents() {
     audio = document.getElementById("audio");
     document.querySelector("#body").addEventListener("keyup", forwardSong);
     var songsList = document.getElementById("songsList");
+    var savePlayList = document.getElementById("save");
+    savePlayList.addEventListener("click", saveSongs);
 
     // for (var i = 0; i < songsArray.length; i++) {
     //     var li = document.createElement("li");
@@ -32,6 +34,22 @@ function initEvents() {
         span.addEventListener("click", playSong);
         btn.addEventListener("click", addtoPlaylist);
     })
+
+    loadPlayList();
+
+}
+
+function saveSongs() {
+    if (window.localStorage) {
+        var json = JSON.stringify(obj.songsList);
+        localStorage.setItem('songs', json);
+        console.log("Songs Saved", obj.songsList);
+    }
+}
+
+function loadPlayList() {
+    obj.songsList = JSON.parse(localStorage.songs);
+    showPlayList();
 
 }
 
