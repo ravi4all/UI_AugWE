@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>LocalStorage Demo</h1>
+
+    <div id="image">
+        <input type="file" id="file" onchange="uploadPic()">
+        <!-- <img src="../../images/" alt=""> -->
+    </div>
+    <br><br>
+    <button onclick="incLike()">Like</button> <span>Likes : <span id="count">0</span></span>
+    <br><br>
+    <p id="commentOutput"></p>
+    <input type="text" placeholder="Enter comment" id="comment">
+    <button onclick="comment()">Comment</button>
+
+    <script>
+        var count = 0;
+        var c = document.getElementById("comment");
+
+        function incLike() {
+            count++;
+            document.getElementById("count").innerHTML = count;
+            saveLocalStorage();
+        }
+
+        function comment() {
+            document.getElementById("commentOutput").innerHTML = c.value;
+            saveLocalStorage();
+            c.value = "";
+        }
+
+        function saveLocalStorage() {
+            var obj = {
+                "likes": count,
+                "comments": c.value
+            }
+            if (window.localStorage) {
+                var json = JSON.stringify(obj);
+                localStorage.setItem('data', json);
+            }
+        }
+
+        function loadLocalStorage() {
+            var data = JSON.parse(localStorage.data);
+            var obj = data;
+            // console.log(obj);
+            document.getElementById("count").innerHTML = obj.likes;
+            document.getElementById("commentOutput").innerHTML = obj.comments;
+        }
+
+        function uploadPic() {
+            var img = document.createElement("img");
+            var file = document.getElementById("file");
+            var obj = file.files;
+            var imgName = obj[0].name;
+            img.src = '../../images/' + imgName;
+            document.getElementById("image").appendChild(img);
+        }
+
+        loadLocalStorage()
+    </script>
+</body>
+
+</html>
