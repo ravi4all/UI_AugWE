@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="div_1">
+        <h2>This is inside div_1</h2>
+        <div class="child">
+            <h2>This is inside child</h2>
+            <div class="grandchild">
+                <h2>This is inside grandchild</h2>
+                <img src="../images/hulk5-18463.gif" alt="">
+                <br>
+                <button>Click Here</button>
+                <br>
+                <img src="../images/hulk5-18463.gif" alt="">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="div_2">
+        <h2>This is inside div_2</h2>
+        <div class="child">
+            <h2>This is inside child</h2>
+            <div class="grandchild">
+                <h2>This is inside grandchild</h2>
+                <img src="../images/hulk5-18463.gif" alt="">
+                <br>
+                <button>Click Here</button>
+                <br>
+                <img src="../images/hulk5-18463.gif" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                // $(this).siblings().hide(2000);
+                // $(this).siblings('img').hide(2000);
+                // $(this).parent().hide(2000);
+                // $(this).parents().hide(2000);
+                // $(this).parentsUntil('#div_1').hide(2000);
+                $(this).parents("#div_1").siblings("#div_2").find("img").hide(2000);
+            })
+        });
+    </script>
+</body>
+
+</html>

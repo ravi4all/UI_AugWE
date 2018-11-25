@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+        
+        img {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Jquery Animations</h1>
+    <button>Animate</button>
+    <div>
+        <img src="../dhoni.jpg" alt="">
+    </div>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("div").animate({
+                        'left': '600px',
+                        // 'top': '0px',
+                        'opacity': '0.5'
+                    },
+                    2000
+                )
+                $("div").animate({
+                    'left': '0px',
+                    'opacity': '1'
+                }, 2000)
+            })
+        });
+    </script>
+</body>
+
+</html>
